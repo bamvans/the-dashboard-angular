@@ -9,6 +9,7 @@ import { CountriesSummaryComponent } from './components/countries-summary/countr
 import { OverallTimelineComponent } from './components/overall-timeline/overall-timeline.component';
 import { OverallSummaryComponent } from './components/overall-summary/overall-summary.component';
 import { MailingListComponent } from './components/mailing-list/mailing-list.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -17,14 +18,10 @@ import { MailingListComponent } from './components/mailing-list/mailing-list.com
     CountriesSummaryComponent,
     OverallTimelineComponent,
     OverallSummaryComponent,
-    MailingListComponent
+    MailingListComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    NgbModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, NgbModule, HttpClientModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
